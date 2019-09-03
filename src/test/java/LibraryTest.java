@@ -36,4 +36,11 @@ public class LibraryTest {
     public void hasCapacity(){
         assertEquals(4,library.getCapacity());
     }
+
+    @Test
+    public void canVerifyCapacity(){
+        library.add(book);
+        assertEquals(1, library.collectionCount());
+
+    }
 }

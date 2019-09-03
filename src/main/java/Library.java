@@ -33,7 +33,13 @@ public class Library {
         return this.capacity;
     }
 
-    //public int capacitySize(){
-        //return this.capacity.size();
-    //}
+    public boolean verifyCapacity() {
+        if (this.collectionCount() < this.capacity) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 }
